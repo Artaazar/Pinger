@@ -27,7 +27,7 @@ namespace Pinger
 
         void PingModels_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private PingTarget _pingtarget;
