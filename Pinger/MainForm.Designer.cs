@@ -1,6 +1,6 @@
 ﻿namespace Pinger
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,26 +29,37 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.PingBox = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(740, 12);
+            this.button1.Location = new System.Drawing.Point(740, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
-            this.button1.Text = "button1";
+            this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // PingBox
+            // 
+            this.PingBox.Location = new System.Drawing.Point(12, 12);
+            this.PingBox.Name = "PingBox";
+            this.PingBox.Size = new System.Drawing.Size(722, 267);
+            this.PingBox.TabIndex = 7;
+            this.PingBox.TabStop = false;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1136, 291);
+            this.ClientSize = new System.Drawing.Size(830, 291);
+            this.Controls.Add(this.PingBox);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Pinger";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
@@ -56,6 +67,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox PingBox;
     }
 }
 
